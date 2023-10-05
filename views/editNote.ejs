@@ -1,0 +1,20 @@
+<!-- views/editNote.ejs -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Note</title>
+</head>
+<body>
+    <h1>Edit Note</h1>
+    <form action="/edit/<%= note.id %>" method="POST">
+        <label for="title">Title:</label>
+        <input type="text" name="title" id="title" value="<%= note.title %>">
+        <br>
+        <label for="content">Content:</label>
+        <textarea name="content" id="content" rows="4"><%= note.content %></textarea>
+        <br>
+        <button type="submit">Update Note</button>
+    </form>
+    <a href="/post/<%= note.id %>">Back to Note Detail</a>
+</body>
+</html>
