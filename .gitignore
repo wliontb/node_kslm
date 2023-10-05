@@ -1,29 +1,35 @@
-# Dependencies
+# compiled output
 /node_modules
+/infra/mysql-data
 
-# Logs and debugging files
+# Logs
+logs
+*.log
 npm-debug.log*
+pnpm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-.pnpm-debug.log*
+lerna-debug.log*
 
-# Environment variables
-.env
-
-# Built output
-/build
-
-# Editor and IDE files
-.idea
-.vscode
-
-# OS generated files
+# OS
 .DS_Store
-Thumbs.db
 
+# Tests
+/coverage
+/.nyc_output
 
-##
-.htaccess
-stderr.log
-/tmp
-/infra/mysql-data
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
